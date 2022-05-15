@@ -1,7 +1,7 @@
 {
-  "name": "3dicons",
+  "name": "3dicons-figma",
   "version": "1.0.0",
-  "description": "Open source 3d icon library ",
+  "description": "Open source 3d icon library plugin for figma",
   "main": "code.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
