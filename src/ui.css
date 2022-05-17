@@ -1,8 +1,20 @@
 body {
-    font: 12px sans-serif;
-    text-align: center;
-    margin: 20px;
-  }
+  margin: 0;
+  font-family: Inter,sans-serif;
+  background-color: var(--figma-color-bg);
+  color: var(--figma-color-text);
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://rsms.me/inter/font-files/Inter-Regular.woff2?v=3.9')
+        format('woff2'),
+      url('https://rsms.me/inter/font-files/Inter-Regular.woff?v=3.9')
+        format('woff');
+}
+  
   button {
     border-radius: 5px;
     background: white;
@@ -27,3 +39,33 @@ body {
   button:focus { box-shadow: inset 0 0 0 2px #0D99FF; }
   #create:focus { box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3); }
   input:focus { box-shadow: inset 0 0 0 2px #0D99FF; }
+
+
+
+  #react-page{
+    
+  }
+
+  .figma-light body {
+    background-color: white;
+    color: blue;
+  }
+  
+  .figma-dark body {
+    background-color: black;
+    color: red;
+  }
+
+  .searchicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px;
+  }
+
+  .left-icon{
+
+  }
+  .right-link{
+     
+  }

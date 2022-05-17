@@ -35,3 +35,4 @@ Quick access to [3dicons](https://feathericons.com) icons in Figma.
 1. Choose `3dicons-plugin/manifest.json`
 
 1. Run the plugin by going to `Menu > Plugins > Development > Feather`
+
