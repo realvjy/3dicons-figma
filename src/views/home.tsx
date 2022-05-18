@@ -1,7 +1,8 @@
 import * as React from "react";
 import theme from '../theme'
 import styled from 'styled-components';
-import {SearchIcon} from "../components/search-icon"
+import {SearchIcon} from "../components/search-icon";
+const { names, colors, angles } = require("../data");
 
 declare function require(path: string): any;
 
@@ -34,9 +35,9 @@ const Home = (props) => {
         </SearchBox>
         
         <IconGrid>
-            {['1', '2', '2', '4', '5','1', '2', '2', '1', '2', '2', '4', '5','1', '2', '2','4', '5', '1', '2', '2', '4', '5', '1', '2', '2', '4', '5', '1', '2', '2', '4', '5' , '1', '2', '2', '4', '5'].map(name => (
+            {names.map(name => (
                 <IconButton>
-                    <img  src="https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/dynamic/color/figma-dynamic-color.png" width="100%" alt={name}/>
+                    <img  src={`https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/${angles[0]}/${colors[2]}/${name}-${angles[0]}-${colors[2]}.png`} width="100%" alt={name}/>
                 </IconButton>
             ))}
         </IconGrid>
