@@ -1,0 +1,17 @@
+{
+    "items":
+    [{ 
+        "keywords":["phone","call","smartphone","mobile"],
+        "items":["phone-incoming","phone-missing","phone-only","phone-outgoing","phone-ringing","mobile"]
+    
+    },{
+        "keywords":["file","document","folder","system"],
+        "items":["fav-folder","igma,file-fav","file-plus","file-text","file"]
+    },{
+        "keywords":["photo","camera","video","picture","image"],
+        "items":["video-camera","picture","camera"]
+    }]
+    
+    
+    
+}
