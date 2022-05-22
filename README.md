@@ -4,7 +4,6 @@ Quick access to [3dicons](https://feathericons.com) icons in Figma.
 
 👉 here
 
-
 ![c70a8d59-917d-484d-a3b5-4db806f34710-cover](https://3dicons.co/preview.jpg)
 
 ## Local development
@@ -12,7 +11,7 @@ Quick access to [3dicons](https://feathericons.com) icons in Figma.
 1. Clone the repository
 
    ```shell
-   git clone 
+   git clone
    cd 3dicons-figma
    ```
 
@@ -34,5 +33,4 @@ Quick access to [3dicons](https://feathericons.com) icons in Figma.
 
 1. Choose `3dicons-plugin/manifest.json`
 
-1. Run the plugin by going to `Menu > Plugins > Development > Feather`
-
+1. Run the plugin by going to `Menu > Plugins > Development > 3dicons`

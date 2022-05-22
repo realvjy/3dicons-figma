@@ -2,7 +2,15 @@ import * as React from "react";
 import theme from '../theme'
 import styled from 'styled-components';
 import {SearchIcon} from "../components/search-icon";
-// import Fuse from 'fuse.js';
+import IconGrid from "../components/icon-grid";
+// import useSearch from "../components/use-search";
+const { icons } = require("../data");
+import Fuse from 'fuse.js'
+
+// interface iconObj {
+//     name: string;
+//     keywords: string[];
+// }
 
 import {
     ClayIcon, 
@@ -13,15 +21,35 @@ import {
     GradientIcon,
     PremiumIcon
 } from "../components/filter-icons";
-const { names } = require("../data");
+// const { names } = require("../data");
 
 declare function require(path: string): any;
 
 const Home = (props) => {
+    // const iconData = props;
+    const [results, setResults] = React.useState(icons)
     const { name } = props;
-    // const prefix = `https://handz.netlify.app/${color}/${type}/${color}-in-${type}`;
-    const color = "color"
-    const angle = "dynamic"
+    const [query, setQuery] = React.useState('')
+    const fuse = new Fuse(icons, {
+        threshold: 0.2,
+        keys: ['name', 'keywords']
+    })
+    React.useEffect(() => {
+        console.log(query.trim());
+        
+        if (query.trim()) {
+            const searchData = fuse.search(query.trim());
+            setResults(searchData.map(result => result.item));
+        } else {
+            setResults(Object.values(icons))
+        }
+    }, [query])
+    
+    // console.log(fuse.search(query.trim()));
+    
+    // results.map(( item ) => {
+    //     console.log(item.name);
+    // })
     return (
       <>
         <SearchBox>
@@ -31,7 +59,14 @@ const Home = (props) => {
                 color={'var(--figma-color-text-secondary)'}
                 className="searchicon"
             />
-            <input type="search" placeholder="Search from 1400+ icons" key={name} ></input>
+            <input 
+                value={query}
+                type="text"
+                autoFocus={true}
+                className="inputSearch"
+                onChange={event => setQuery(event.target.value)}
+                placeholder="Search from 1400+ icons" key={name} 
+            />
             <FilterBox>
                 <Select className="colorbtns">
                     <li>
@@ -106,22 +141,22 @@ const Home = (props) => {
             </FilterBox>
         </SearchBox>
         
-        <IconGrid>
-            {names.map(name => (
-                <IconButton key={name}>
-                    <img  src={`https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/${angle}/${color}/${name}-${angle}-${color}.png`} width="100%" alt={name}/>
-                </IconButton>
+        <Grid>
+            {results.map((icon) => (
+                <IconGrid name={icon.name} keyword={icon} key={icon.name}/>
             ))}
-        </IconGrid>
-        <FooterCredit>
-            <div className="left-icon">
-                <a href="https://3dicons.co" target="_blank"><img  src="https://3dicons.co/3dicons.png" height="12px" alt={name}/></a>
-                <span>v1.0</span>
-            </div>
-            <div className="right-link">
-                by <a href="https://twitter.com/realvjy" target="_blank">@realvjy</a>
-            </div>
-        </FooterCredit>
+        </Grid>
+        <FooterWrapper>
+            <FooterCredit>
+                <div className="left-icon">
+                    <a href="https://3dicons.co" target="_blank"><img  src="https://3dicons.co/3dicons.png" height="12px" alt={name}/></a>
+                    <span>v1.0</span>
+                </div>
+                <div className="right-link">
+                    by <a href="https://twitter.com/realvjy" target="_blank">@realvjy</a>
+                </div>
+            </FooterCredit>
+        </FooterWrapper>
       </>
     );
   };
@@ -148,7 +183,7 @@ const SearchBox = styled.div`
   }
 `;
 
-const IconGrid = styled.div`
+const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 6px;
@@ -199,20 +234,10 @@ const FilterButton = styled.button`
     }
 `
 
-const IconButton = styled.button`
-    margin: 0;
-    padding: 8px;
-    background: var(--figma-color-bg-secondary);
-    border: 0;
-    box-shadow: none;
-    border-radius: 8px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    outline: 0;
-    :hover{
-        border: 1px solid var(--figma-color-border-brand);
-    }
+const FooterWrapper = styled.div`
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 `
 
 const FooterCredit = styled.div`
@@ -220,7 +245,6 @@ const FooterCredit = styled.div`
     padding: 6px 8px;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     bottom: 0;
     background: var(--figma-color-bg-hover);
     border-top: .5px solid var(--figma-color-border);
