@@ -27,15 +27,17 @@ declare function require(path: string): any;
 
 const Home = (props) => {
     // const iconData = props;
-    const [results, setResults] = React.useState(icons)
     const { name } = props;
+
+    const [results, setResults] = React.useState(icons)
     const [query, setQuery] = React.useState('')
+    const [color, setColor] = React.useState("color");
+    const [angle, setAngle] = React.useState("dynamic");
     const fuse = new Fuse(icons, {
         threshold: 0.2,
         keys: ['name', 'keywords']
     })
     React.useEffect(() => {
-        console.log(query.trim());
         
         if (query.trim()) {
             const searchData = fuse.search(query.trim());
@@ -70,45 +72,100 @@ const Home = (props) => {
             <FilterBox>
                 <Select className="colorbtns">
                     <li>
-                        <FilterButton className="active">
+                        <FilterButton 
+                            data-tooltip="Procreate Import"
+                            value={color}
+                            className={`button ${color === "color" ? "active" : ""}`}
+                            onClick={() => {
+                                setColor("color");
+                            }}
+                        >
                             <ColorIcon
                                 height="18px"
                                 width="18px"
                                 className="filtericon"
                             />
                         </FilterButton>
+                        <ToolTip>
+                            <div className="nib-l">
+                            </div>
+                            <div className="text">
+                                Color
+                            </div>
+                        </ToolTip>
                     </li>
                     <li>
-                        <FilterButton>
+                        <FilterButton
+                            className={`button ${color === "gradient" ? "active" : ""}`}
+                            onClick={() => {
+                                setColor("gradient");
+                            }}
+                        >
                             <GradientIcon 
                                 height="18px"
                                 width="18px"
                                 className="filtericon"
                             />
                         </FilterButton>
+                        <ToolTip>
+                            <div className="nib-l">
+                            </div>
+                            <div className="text">
+                                Gradient
+                            </div>
+                        </ToolTip>
                     </li>
                     <li>
-                        <FilterButton >
+                        <FilterButton
+                            className={`button ${color === "clay" ? "active" : ""}`}
+                            onClick={() => {
+                                setColor("clay");
+                            }}
+                        >
                             <ClayIcon 
                                 height="18px"
                                 width="18px"
                                 className="filtericon"
                             />
                         </FilterButton>
+                        <ToolTip>
+                            <div className="nib-l">
+                            </div>
+                            <div className="text">
+                                Clay
+                            </div>
+                        </ToolTip>
                     </li>
                     <li>
-                        <FilterButton>
+                        <FilterButton
+                            className={`button ${color === "premium" ? "active" : ""}`}
+                            onClick={() => {
+                                setColor("premium");
+                            }}
+                        >
                             <PremiumIcon 
                                 height="18px"
                                 width="18px"
                                 className="filtericon"
                             />
                         </FilterButton>
+                        <ToolTip>
+                            <div className="nib-l">
+                            </div>
+                            <div className="text">
+                                Premium
+                            </div>
+                        </ToolTip>
                     </li>
                 </Select>
                 <Select className="anglebtns">
                     <li>
-                        <FilterButton className="active">
+                        <FilterButton
+                            className={`button ${angle === "dynamic" ? "active" : ""}`}
+                            onClick={() => {
+                                setAngle("dynamic");
+                            }}
+                        >
                             <DynamicIcon 
                                 height="18px"
                                 width="18px"
@@ -116,9 +173,21 @@ const Home = (props) => {
                                 className="filtericon"
                             />
                         </FilterButton>
+                        <ToolTip className="r">
+                            <div className="nib-r">
+                            </div>
+                            <div className="text">
+                                Dynamic
+                            </div>
+                        </ToolTip>
                     </li>
                     <li>
-                        <FilterButton>
+                        <FilterButton
+                            className={`button ${angle === "front" ? "active" : ""}`}
+                            onClick={() => {
+                                setAngle("front");
+                            }}
+                        >
                             <FrontIcon 
                                 height="18px"
                                 width="18px"
@@ -126,9 +195,21 @@ const Home = (props) => {
                                 className="filtericon"
                             />
                         </FilterButton>
+                        <ToolTip className="r">
+                            <div className="nib-r">
+                            </div>
+                            <div className="text">
+                                Front
+                            </div>
+                        </ToolTip>
                     </li>
                     <li>
-                        <FilterButton>
+                        <FilterButton
+                            className={`button ${angle === "iso" ? "active" : ""}`}
+                            onClick={() => {
+                                setAngle("iso");
+                            }}
+                        >
                             <IsoIcon 
                                 height="18px"
                                 width="18px"
@@ -136,6 +217,13 @@ const Home = (props) => {
                                 className="filtericon"
                             />
                         </FilterButton>
+                        <ToolTip className="r">
+                            <div className="nib-r">
+                            </div>
+                            <div className="text">
+                                ISO
+                            </div>
+                        </ToolTip>
                     </li>
                 </Select>
             </FilterBox>
@@ -143,7 +231,7 @@ const Home = (props) => {
         
         <Grid>
             {results.map((icon) => (
-                <IconGrid name={icon.name} keyword={icon} key={icon.name}/>
+                <IconGrid name={icon.name} keyword={icon} key={icon.name} color={color} angle={angle}/>
             ))}
         </Grid>
         <FooterWrapper>
@@ -207,6 +295,15 @@ const Select = styled.ul`
         list-style: none;
         margin: 0;
         padding: 0;
+        position: relative;
+        >div{
+            display: none;
+        }
+        &:hover{
+            >div{
+                display: flex;
+            }
+        }
     }
     &.colorbtns{
         grid-template-columns: repeat(4,1fr);
@@ -228,6 +325,7 @@ const FilterButton = styled.button`
     background: var(--figma-color-bg);
     :hover{
         border: 1px solid var(--figma-color-border);
+        
     }
     &.active{
         background: var(--figma-color-bg-secondary);
@@ -290,5 +388,58 @@ const FooterCredit = styled.div`
         }
     }
 
+`
+
+const ToolTip = styled.div`
+    z-index: 100;
+    display: flex;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: calc(100% + 1ch);
+    &.r{
+        right: 0;
+    }
+    .nib-l{
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid black;
+        top: -4px;
+        left: 12px;
+    }
+    .nib-r{
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid black;
+        top: -4px;
+        right: 12px;
+    }
+    .text{
+        align-self: start;
+        border: 0.5px solid rgb(0, 0, 0);
+        box-sizing: border-box;
+        border-radius: 2px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        padding: 4px 8px;
+        background-color: rgb(34, 34, 34);
+    }
 `
 

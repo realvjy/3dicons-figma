@@ -4,11 +4,12 @@ import styled from 'styled-components';
 interface IconGridProps {
   name: string
   keyword: string
+  color: string
+  angle: string
 }
 
-function IconGrid({ name, keyword }: IconGridProps) {
-  const color = "color"
-  const angle = "dynamic"
+function IconGrid({ name, keyword, color, angle }: IconGridProps) {
+
 //   const icon = "phone"
 //   console.log(name);
 

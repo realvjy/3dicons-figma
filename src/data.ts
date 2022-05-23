@@ -2,327 +2,327 @@ const iconData = {
  "icons": [
     {
         "name": "3d-coin",
-        "keywords": "keywords"
+        "keywords": ["3D","money","coin","currency","circle"]
     },
     {
         "name": "3d",
-        "keywords": ""
+        "keywords": ["3d","box","3 dimensional"]
     },
     {
         "name": "at",
-        "keywords": ""
+        "keywords": ["@","email","gmail"]
     },
     {
         "name": "axe",
-        "keywords": ""
+        "keywords": ["tool", "wood", "chopping", "hatchet"]
     },
     {
         "name": "back",
-        "keywords": ""
+        "keywords": ["back","reverse","forward","backward"]
     },
     {
         "name": "backward",
-        "keywords": ""
+        "keywords": ["back","reverse","forward","backward"]
     },
     {
         "name": "bag",
-        "keywords": ""
+        "keywords": ["bagpack","backpack","basket","school","kid"]
     },
     {
         "name": "battery",
-        "keywords": ""
+        "keywords": ["power", "source", "energy", "charge"]
     },
     {
         "name": "blender",
-        "keywords": ""
+        "keywords": ["3d","blender","3d-modeling","3dart","c4d"]
     },
     {
         "name": "bookmark-fav",
-        "keywords": ""
+        "keywords": ["bookmark","book","mark","study","favourite","favorite"]
     },
     {
         "name": "bookmark",
-        "keywords": ""
+        "keywords": ["bookmark","book","mark","study","marks"]
     },
     {
         "name": "boy",
-        "keywords": ""
+        "keywords": ["girl","boy","guy","men","user","people"]
     },
     {
         "name": "brush",
-        "keywords": ""
+        "keywords": ["brush","teeth","cleaning","hygiene","painting","art","color","colour"]
     },
     {
         "name": "bucket",
-        "keywords": ""
+        "keywords": ["pail","container", "can", "vessel","water","water-bucket","bucket"]
     },
     {
         "name": "bulb",
-        "keywords": ""
+        "keywords": ["light", "lamp", "LED", "energy-saving", "fluorescent","idea"]
     },
     {
         "name": "calculator",
-        "keywords": ""
+        "keywords": ["math", "numbers", "addition", "subtraction", "multiplication", "division", "algebra","calculator"]
     },
     {
         "name": "calender",
-        "keywords": ""
+        "keywords": ["calendar", "date", "time", "day", "month", "year"]
     },
     {
         "name": "camera",
-        "keywords": ""
+        "keywords": ["picture", "photographs", "snapshot", "image","camera"]
     },
     {
         "name": "can",
-        "keywords": ""
+        "keywords": ["trash", "can", "garbage", "bin","container", "receptacle", "garbage"]
     },
     {
         "name": "card",
-        "keywords": ""
+        "keywords": ["card","creditcard", "debit card", "gift card"]
     },
     {
         "name": "chart",
-        "keywords": ""
+        "keywords": ["graph", "data", "table", "visualization", "information"]
     },
     {
         "name": "chat-bubble",
-        "keywords": ""
+        "keywords": ["chat", "bubble","chatting","groupchat"]
     },
     {
         "name": "chat-text",
-        "keywords": ""
+        "keywords": ["textchat","chat","groupchat","message"]
     },
     {
         "name": "chat",
-        "keywords": ""
+        "keywords": ["Conversation", "dialogue", "talk", "communication"]
     },
     {
         "name": "chess",
-        "keywords": ""
+        "keywords": ["board", "game", "piece", "king", "queen", "rook", "bishop", "knight"]
     },
     {
         "name": "circle",
-        "keywords": ""
+        "keywords": ["round","object","round", "shape", "curve", "circumference"]
     },
     {
         "name": "clock",
-        "keywords": ""
+        "keywords": ["time", "day", "night", "watch"]
     },
     {
         "name": "color-palette",
-        "keywords": ""
+        "keywords": ["color","artist","art","paint","pallatte","colour",]
     },
     {
         "name": "computer",
-        "keywords": ""
+        "keywords": ["computer","coding","devloper","computer", "technology", "device", "gadget", "tool"]
     },
     {
         "name": "copy",
-        "keywords": ""
+        "keywords": ["copytext","duplicate","twins","paste"]
     },
     {
         "name": "crow",
-        "keywords": ""
+        "keywords": ["Crown", "king", "queen", "jewel", "headgear"]
     },
     {
         "name": "cube",
-        "keywords": ""
+        "keywords": ["math","3 dimensional", "object", "shape"]
     },
     {
         "name": "cup",
-        "keywords": ""
+        "keywords": ["Cup", "coffee", "tea", "saucer", "porcelain", "china", "mug", "glass"]
     },
     {
         "name": "dollar",
-        "keywords": ""
+        "keywords": ["money", "currency", "economy"]
     },
     {
         "name": "eth",
-        "keywords": ""
+        "keywords": ["Ethereum", "cryptocurrency", "blockchain","nft"]
     },
     {
         "name": "euro",
-        "keywords": ""
+        "keywords": ["money", "currency", "economy"]
     },
     {
         "name": "explorer",
-        "keywords": ""
+        "keywords": ["adventure", "fun", "excitement", "thrill", "suspense"]
     },
     {
         "name": "eyedropper",
-        "keywords": ""
+        "keywords": ["eyedropper", "tool", "eye"]
     },
     {
         "name": "fav-folder",
-        "keywords": ""
+        "keywords": ["folder", "document","file"]
     },
     {
         "name": "figma",
-        "keywords": ""
+        "keywords": ["designe","designer","designe-software","uiux"]
     },
     {
         "name": "file-fav",
-        "keywords": ""
+        "keywords": ["folder", "document","file"]
     },
     {
         "name": "file-plus",
-        "keywords": ""
+        "keywords": ["folder", "document","file"]
     },
     {
         "name": "file-text",
-        "keywords": ""
+        "keywords": ["folder", "document","file","textfile"]
     },
     {
         "name": "file",
-        "keywords": ""
+        "keywords": ["folder", "document","file"]
     },
     {
         "name": "fire",
-        "keywords": ""
+        "keywords": ["fire","heat","warm"]
     },
     {
         "name": "flag",
-        "keywords": ""
+        "keywords": [ "patriotism", "nationalpride", "country"]
     },
     {
         "name": "flash",
-        "keywords": ""
+        "keywords": ["Flashlight", "light", "bulb", "batteries"]
     },
     {
         "name": "folder",
-        "keywords": ""
+        "keywords":  ["folder", "document","file","textfile"]
     },
     {
         "name": "forward",
-        "keywords": ""
+        "keywords": ["backward","movement", "progress", "advance"]
     },
     {
         "name": "gift",
-        "keywords": ""
+        "keywords": ["presents", "giving", "celebrations", "Christmas"]
     },
     {
         "name": "girl",
-        "keywords": ""
+        "keywords": ["girl", "woman", "female", "ladies","people","user"]
     },
     {
         "name": "glass",
-        "keywords": ""
+        "keywords": ["window", "pane", "drinking glass", "mirror", "eyeglasses"]
     },
     {
         "name": "gym",
-        "keywords": ""
+        "keywords": ["fitness", "workout", "exercise", "health"]
     },
     {
         "name": "headphone",
-        "keywords": ""
+        "keywords": ["headphones", "audio", "listening", "music", "sound"]
     },
     {
         "name": "heart",
-        "keywords": ""
+        "keywords": ["love","heart","kaparkagudda","kereji"]
     },
     {
         "name": "key",
-        "keywords": ""
+        "keywords": ["key","lock","door","doorlock"]
     },
     {
         "name": "lab",
-        "keywords": ""
+        "keywords": ["laboratory","research", "development", "scientist", "chemistry"]
     },
     {
         "name": "link",
-        "keywords": ""
+        "keywords": ["link","internet","socialmedia"]
     },
     {
         "name": "location",
-        "keywords": ""
+        "keywords": ["place","map","ip","position", "spot", "site", "locale"]
     },
     {
         "name": "lock",
-        "keywords": ""
+        "keywords": ["lock","key","door","locker","money"]
     },
     {
         "name": "locker",
-        "keywords": ""
+        "keywords": ["lock","key","door","locker","money"]
     },
     {
         "name": "magic-trick",
-        "keywords": ""
+        "keywords": ["magic-trick","magic","wizards","magicians","supernetural"]
     },
     {
         "name": "mail",
-        "keywords": ""
+        "keywords":[ "mail", "email"," postal service", "letter"]
     },
     {
         "name": "map-pin",
-        "keywords": ""
+        "keywords": ["map","location","place","pin"]
     },
     {
         "name": "medal",
-        "keywords": ""
+        "keywords": ["medal", "award", "commendation", "decoration","goldmedal"]
     },
     {
         "name": "megaphone",
-        "keywords": ""
+        "keywords": ["loud", "speaker", "sound", "projection"]
     },
     {
         "name": "mic",
-        "keywords": ""
+        "keywords": ["microphone", "sound", "waves", "frequency", "amplitude"]
     },
     {
         "name": "minecraft",
-        "keywords": ""
+        "keywords": ["game", "block", "3d", "environment", "exploration", "construction","creeper"]
     },
     {
         "name": "mobile",
-        "keywords": ""
+        "keywords": ["mobile phone", "cell phone", "wireless", "telecommunication", "communication"]
     },
     {
         "name": "money-bag",
-        "keywords": ""
+        "keywords": ["money","currency","dollor","moneybag","storage","locker"]
     },
     {
         "name": "money",
-        "keywords": ""
+        "keywords": ["Coins", "bills", "wealth", "currency", "cash"]
     },
     {
         "name": "moon",
-        "keywords": ""
+        "keywords": ["moon", "night", "sky", "stars", "dark", "light"]
     },
     {
         "name": "music",
-        "keywords": ""
+        "keywords": ["songs", "band", "orchestra", "solo", "chorus", "tune", "melody"]
     },
     {
         "name": "new-folder",
-        "keywords": ""
+        "keywords": ["folder", "document","file","textfile"]
     },
     {
         "name": "next",
-        "keywords": ""
+        "keywords": ["next", "step", "forward", "continue"]
     },
     {
         "name": "notebook",
-        "keywords": ""
+        "keywords": ["paper", "pen", "ink", "words", "thoughts", "computer"]
     },
     {
         "name": "notify-heart",
-        "keywords": ""
+        "keywords": ["notification","bell","icon","emoji"]
     },
     {
         "name": "paint-brush",
-        "keywords": ""
+        "keywords": ["artist","painting","art","meusium"]
     },
     {
         "name": "paint-kit",
-        "keywords": ""
+        "keywords": ["artist","paintings","color","paint"]
     },
     {
         "name": "pause",
-        "keywords": ""
+        "keywords": ["pause","break","game","play"]
     },
     {
         "name": "pencil",
-        "keywords": ""
+        "keywords": ["study","book","pen","pencil","bag"]
     },
     {
         "name": "phone-end",
@@ -350,123 +350,123 @@ const iconData = {
     },
     {
         "name": "picture",
-        "keywords": ""
+        "keywords": ["photo", "image", "art", "snapshot"]
     },
     {
         "name": "pin",
-        "keywords": ""
+        "keywords": ["pin", "needle", "sharp", "point", "metal"]
     },
     {
         "name": "play",
-        "keywords": ""
+        "keywords": ["play", "fun", "enjoyable", "entertaining"]
     },
     {
         "name": "plus",
-        "keywords": ""
+        "keywords": ["plus", "add", "additional", "more"]
     },
     {
         "name": "pound",
-        "keywords": ""
+        "keywords": ["money, weight, British"]
     },
     {
         "name": "puzzle",
-        "keywords": ""
+        "keywords": ["puzzle", "game", "fun", "challenge", "solve"]
     },
     {
         "name": "rocket",
-        "keywords": ""
+        "keywords": ["space", "travel", "exploration", "science"]
     },
     {
         "name": "roll-brush",
-        "keywords": ""
+        "keywords": ["paint","renovating","house","wall"]
     },
     {
         "name": "rupee",
-        "keywords": ""
+        "keywords": ["indian-rupee","india","money","currency"]
     },
     {
         "name": "scissor",
-        "keywords": ""
+        "keywords": ["tool","cutting","kinef"]
     },
     {
         "name": "setting",
-        "keywords": ""
+        "keywords": ["setting", "location", "scene", "backdrop"]
     },
     {
         "name": "sheild",
-        "keywords": ""
+        "keywords": ["protect", "safeguard", "defend","mod","war"]
     },
     {
         "name": "sphere",
-        "keywords": ""
+        "keywords": ["spherical", "round", "three-dimensional", "ball", "shape"]
     },
     {
         "name": "star",
-        "keywords": ""
+        "keywords": ["star", "night", "sky", "shining", "bright"]
     },
     {
         "name": "sun",
-        "keywords": ""
+        "keywords": ["sun", "sky", "brightness", "warmth","light"]
     },
     {
         "name": "takeaway-cup",
-        "keywords": ""
+        "keywords": ["cofee","tea","cup","starbucks"]
     },
     {
         "name": "target",
-        "keywords": ""
+        "keywords": ["target", "goal", "objective", "mark"]
     },
     {
         "name": "tea-cup",
-        "keywords": ""
+        "keywords": ["tea","cup","cuptea","cofee","warmdrink"]
     },
     {
         "name": "text",
-        "keywords": ""
+        "keywords": ["chat","text","chatting","latters"]
     },
     {
         "name": "thumb-down",
-        "keywords": ""
+        "keywords": ["dislike","thumb","bad","hand"]
     },
     {
         "name": "thumb-up",
-        "keywords": ""
+        "keywords": ["like","good","thumb","hand"]
     },
     {
         "name": "tick",
-        "keywords": ""
+        "keywords": ["tick","tock","watch","clock"]
     },
     {
         "name": "toggle",
-        "keywords": ""
+        "keywords": ["onn","off","turnon","switch","electric","block"]
     },
     {
         "name": "tool",
-        "keywords": ""
+        "keywords": ["tool"]
     },
     {
         "name": "trash-can",
-        "keywords": ""
+        "keywords": ["bin","trash","trashcan"]
     },
     {
         "name": "travel",
-        "keywords": ""
+        "keywords": ["traveling", "trip", "tourist", "destination", "journey"]
     },
     {
         "name": "trophy",
-        "keywords": ""
+        "keywords": ["reward","trophy","achivement","happy","goal"]
     },
     {
         "name": "umbrella",
-        "keywords": ""
+        "keywords": ["raining","thunder","sunnyday","weather","season"]
     },
     {
         "name": "video-camera",
-        "keywords": ""
+        "keywords": ["video-camera","camera","image"]
     },
     {
         "name": "wallet",
-        "keywords": ""
+        "keywords": ["money", "cash", "credit card", "debit card", "check"]
     },
     {
         "name": "wifi",
