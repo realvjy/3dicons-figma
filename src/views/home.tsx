@@ -3,14 +3,9 @@ import theme from '../theme'
 import styled from 'styled-components';
 import {SearchIcon} from "../components/search-icon";
 import IconGrid from "../components/icon-grid";
-// import useSearch from "../components/use-search";
 const { icons } = require("../data");
 import Fuse from 'fuse.js'
 
-// interface iconObj {
-//     name: string;
-//     keywords: string[];
-// }
 
 import {
     ClayIcon, 
@@ -25,6 +20,8 @@ import {
 
 declare function require(path: string): any;
 
+
+
 const Home = (props) => {
     // const iconData = props;
     const { name } = props;
@@ -33,10 +30,16 @@ const Home = (props) => {
     const [query, setQuery] = React.useState('')
     const [color, setColor] = React.useState("color");
     const [angle, setAngle] = React.useState("dynamic");
+    const canvasRef = React.useRef(null);
+    const imgRef = React.useRef(null);
+    // src={`https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/${angle}/${color}/${name}-${angle}-${color}.png`} 
+    // Setup Fuse search
     const fuse = new Fuse(icons, {
         threshold: 0.2,
         keys: ['name', 'keywords']
     })
+    
+
     React.useEffect(() => {
         
         if (query.trim()) {
@@ -46,6 +49,7 @@ const Home = (props) => {
             setResults(Object.values(icons))
         }
     }, [query])
+    
     
     // console.log(fuse.search(query.trim()));
     
@@ -230,10 +234,14 @@ const Home = (props) => {
         </SearchBox>
         
         <Grid>
-            {results.map((icon) => (
-                <IconGrid name={icon.name} keyword={icon} key={icon.name} color={color} angle={angle}/>
-            ))}
+            {results.map((icon, i) => {
+                return(
+                    <IconGrid name={icon.name} keyword={icon.keywords} key={icon.name} color={color} angle={angle} imgRef={imgRef} canRef={canvasRef}/>
+                );
+            })}
         </Grid>
+        <canvas ref={canvasRef} style={{ display: "none" }} />
+        <img ref={imgRef} style={{ display: "none" }} />
         <FooterWrapper>
             <FooterCredit>
                 <div className="left-icon">

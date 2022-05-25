@@ -9,9 +9,15 @@ figma.showUI(__html__, {
   }
 );
 
+function clone(val) {
+  return JSON.parse(JSON.stringify(val))
+}
 
 //  Message received
 figma.ui.onmessage = (msg) => {
+  console.log("got this from the UI", msg)
+  console.log("checking message type ", msg.type);
+  
   if (msg.type === 'window-resize') {
     figma.ui.resize(msg.data.width, msg.data.height);
     return;
@@ -29,7 +35,7 @@ figma.ui.onmessage = (msg) => {
     let node = figma.currentPage.selection[0];
     if (!node || dropPosition) {
       node = figma.createRectangle();
-      node.resize(800, 600)
+      node.resize(800, 800)
     }
     figma.notify('Added to canvas');
 
