@@ -6,7 +6,7 @@ const iconData = {
     },
     {
         "name": "3d",
-        "keywords": ["3d","box","3 dimensional"]
+        "keywords": ["3d","3","3 dimensional"]
     },
     {
         "name": "at",
@@ -70,7 +70,7 @@ const iconData = {
     },
     {
         "name": "camera",
-        "keywords": ["picture", "photographs", "snapshot", "image","camera"]
+        "keywords": ["picture", "photographs", "snapshot", "image","camera","media"]
     },
     {
         "name": "can",
@@ -318,7 +318,7 @@ const iconData = {
     },
     {
         "name": "pause",
-        "keywords": ["pause","break","game","play"]
+        "keywords": ["pause","break","game","play","media","player"]
     },
     {
         "name": "pencil",
@@ -358,7 +358,7 @@ const iconData = {
     },
     {
         "name": "play",
-        "keywords": ["play", "fun", "enjoyable", "entertaining"]
+        "keywords": ["play", "fun", "enjoyable", "entertaining","media","player"]
     },
     {
         "name": "plus",
@@ -438,15 +438,15 @@ const iconData = {
     },
     {
         "name": "toggle",
-        "keywords": ["onn","off","turnon","switch","electric","block"]
+        "keywords": ["on","off","turnon","switch","electric"]
     },
     {
         "name": "tool",
-        "keywords": ["tool"]
+        "keywords": ["tool","setting","hammer","screw"]
     },
     {
         "name": "trash-can",
-        "keywords": ["bin","trash","trashcan"]
+        "keywords": ["bin","trash","trashcan","recycle"]
     },
     {
         "name": "travel",
@@ -462,7 +462,7 @@ const iconData = {
     },
     {
         "name": "video-camera",
-        "keywords": ["video-camera","camera","image"]
+        "keywords": ["video-camera","camera","image","media"]
     },
     {
         "name": "wallet",
@@ -470,15 +470,15 @@ const iconData = {
     },
     {
         "name": "wifi",
-        "keywords": ""
+        "keywords": ["internet","web"]
     },
     {
         "name": "yuan",
-        "keywords": ""
+        "keywords": ["currency"]
     },
     {
         "name": "zoom",
-        "keywords": ""
+        "keywords": ["magnifier"]
     }
     ],
     colors: ['color', 'clay', 'gradient' ,'premium'],

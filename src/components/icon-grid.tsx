@@ -1,6 +1,8 @@
 import * as React from "react";
 import styled from 'styled-components';
 
+
+
 interface IconGridProps {
   name: string
   keyword: string
@@ -56,8 +58,12 @@ function IconGrid({ name, keyword, color, angle, imgRef, canRef }: IconGridProps
   // const canvasRef = React.useRef(null);
   // const imgRef = React.useRef(null);
   const prefix = `https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/${angle}/${color}/`;
+  const imageKitPrefix = `https://ik.imagekit.io/3dicons/tr:w-100,h-100/v1/${angle}/${color}/`;
   const sufix = `-${angle}-${color}.png?new_icon`;
+  const [imgData, setImgData] = React.useState('');
 
+
+    
   const setBg = async (dropPosition = null, windowSize = null) => {
     console.log('inside setBG');
     
@@ -98,21 +104,20 @@ function IconGrid({ name, keyword, color, angle, imgRef, canRef }: IconGridProps
   };
 
 
+  
   return (
     <Button
         key={name}
         // onClick={() => parent.postMessage({ pluginMessage: { type: name } }, '*')}
         onClick={() => {
           setBg();
-          // console.log(imgRef);
-          
         }}
     >
         <img  
-          src={`${prefix}${name}${sufix}`} 
+          src={`${imageKitPrefix}${name}${sufix}`} 
           width="100%" 
           alt={name}
-          crossOrigin={"anonymous"}
+          // crossOrigin={"anonymous"}
         />
     </Button>
   )

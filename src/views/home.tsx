@@ -284,6 +284,7 @@ const Grid = styled.div`
     grid-template-columns: repeat(3,1fr);
     grid-gap: 6px;
     padding: 8px;
+    margin-bottom: 40px;
 `;
 
 const FilterBox = styled.div`
