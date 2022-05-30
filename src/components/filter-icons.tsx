@@ -83,9 +83,9 @@ export const GradientIcon = ({
         y2="24"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#FFDE69" />
-        <stop offset="0.392928" stop-color="#FFA63E" />
-        <stop offset="1" stop-color="#FF6737" />
+        <stop stopColor="#FFDE69" />
+        <stop offset="0.392928" stopColor="#FFA63E" />
+        <stop offset="1" stopColor="#FF6737" />
       </linearGradient>
     </defs>
   </svg>
@@ -118,10 +118,10 @@ export const PremiumIcon = ({
         y2="24"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.467746" stop-color="#FFE920" stop-opacity="0" />
-        <stop offset="0.494792" stop-color="#FFB84D" />
-        <stop offset="0.635417" stop-color="#FFBB0D" />
-        <stop offset="0.666667" stop-color="#FFBB0D" stop-opacity="0" />
+        <stop offset="0.467746" stopColor="#FFE920" stopOpacity="0" />
+        <stop offset="0.494792" stopColor="#FFB84D" />
+        <stop offset="0.635417" stopColor="#FFBB0D" />
+        <stop offset="0.666667" stopColor="#FFBB0D" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>

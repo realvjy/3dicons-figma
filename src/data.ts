@@ -6,11 +6,11 @@ const iconData = {
     },
     {
         "name": "3d",
-        "keywords": ["3d","3","3 dimensional"]
+        "keywords": ["3d","3dicons","3 dimensional","number"]
     },
     {
         "name": "at",
-        "keywords": ["@","email","gmail"]
+        "keywords": ["@","email","gmail","text"]
     },
     {
         "name": "axe",
@@ -18,11 +18,11 @@ const iconData = {
     },
     {
         "name": "back",
-        "keywords": ["back","reverse","forward","backward"]
+        "keywords": ["back","reverse","backward","player"]
     },
     {
         "name": "backward",
-        "keywords": ["back","reverse","forward","backward"]
+        "keywords": ["back","reverse","backward","player"]
     },
     {
         "name": "bag",
@@ -34,7 +34,7 @@ const iconData = {
     },
     {
         "name": "blender",
-        "keywords": ["3d","blender","3d-modeling","3dart","c4d"]
+        "keywords": ["3d","blender","3d-modeling","3dart","c4d","aps"]
     },
     {
         "name": "bookmark-fav",
@@ -194,7 +194,7 @@ const iconData = {
     },
     {
         "name": "forward",
-        "keywords": ["backward","movement", "progress", "advance"]
+        "keywords": ["backward","movement", "progress", "advance","media","player"]
     },
     {
         "name": "gift",
@@ -218,7 +218,7 @@ const iconData = {
     },
     {
         "name": "heart",
-        "keywords": ["love","heart","kaparkagudda","kereji"]
+        "keywords": ["love","heart","kapar","kereji","red","like","favorite"]
     },
     {
         "name": "key",
@@ -298,11 +298,11 @@ const iconData = {
     },
     {
         "name": "next",
-        "keywords": ["next", "step", "forward", "continue"]
+        "keywords": ["next", "step", "forward", "continue","media", "player"]
     },
     {
         "name": "notebook",
-        "keywords": ["paper", "pen", "ink", "words", "thoughts", "computer"]
+        "keywords": ["paper", "pen", "ink", "words", "thoughts"]
     },
     {
         "name": "notify-heart",
@@ -402,7 +402,7 @@ const iconData = {
     },
     {
         "name": "star",
-        "keywords": ["star", "night", "sky", "shining", "bright"]
+        "keywords": ["star", "night", "sky", "shining", "bright","fav","like"]
     },
     {
         "name": "sun",

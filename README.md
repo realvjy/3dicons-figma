@@ -1,7 +1,7 @@
-# Feather Figma plugin
+# 3dicons Figma plugin
 
-Quick access to [3dicons](https://feathericons.com) icons in Figma.
-
+Quick access to [3dicons](https://3dicons.co) icons in Figma.
+Grab community file from [Figma Community]()
 👉 here
 
 ![c70a8d59-917d-484d-a3b5-4db806f34710-cover](https://3dicons.co/preview.jpg)
@@ -29,7 +29,7 @@ Quick access to [3dicons](https://feathericons.com) icons in Figma.
 
 1. Open the [Figma desktop app](https://www.figma.com/downloads/)
 
-1. Go to `Menu > Plugins > Development > New Plugin...`
+1. Go to `Menu > Plugins > Development > Import Plugin from manifest...`
 
 1. Choose `3dicons-plugin/manifest.json`
 
