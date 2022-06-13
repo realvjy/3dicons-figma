@@ -61,7 +61,6 @@ figma.ui.onmessage = (msg) => {
     }
     //@ts-ignore
     node.fills = newFills
-    console.log(figma.viewport.center.x, figma.viewport.center.y );
 
     figma.currentPage.selection = [node];
 
