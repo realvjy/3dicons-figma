@@ -1,4 +1,4 @@
-[![3dicons-figma](/preview.png)](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
+[![3dicons-figma](src/preview.png)](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
 
 # 3dicons Figma plugin
 
@@ -6,8 +6,8 @@ Use 1400+ [3dicons](https://3dicons.co) within Figma or Figjam files quickly. Th
 
 ## Figma Community
 
-Grab community file from [Figma Community](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
-👉 here
+Grab community file from 👉 here [Figma Community](https://www.figma.com/community/plugin/1107546399747513238/3dicons)
+
 
 ## Local development
 
