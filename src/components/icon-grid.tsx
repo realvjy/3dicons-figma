@@ -92,7 +92,7 @@ function IconGrid({
         setBg();
       }}
     >
-      <img src={`${imageKitPrefix}${name}${sufix}`} width="100%" alt={name} />
+      <img src={`${prefix}${name}${sufix}`} width="100%" alt={name} />
     </Button>
   );
 }
