@@ -7,5 +7,11 @@
   "editorType": [
     "figma",
     "figjam"
-  ]
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "https://3dicons.co",
+      "https://3dicons.sgp1.cdn.digitaloceanspaces.com/"
+    ]
+  }
 }
