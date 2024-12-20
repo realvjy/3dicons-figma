@@ -23,8 +23,9 @@ declare function require(path: string): any;
 const Home = (props) => {
   // const iconData = props;
   const { name } = props;
+  const reversedIcons = [...icons].reverse();
 
-  const [results, setResults] = React.useState(icons);
+  const [results, setResults] = React.useState(reversedIcons);
   const [query, setQuery] = React.useState("");
   const [color, setColor] = React.useState("color");
   const [angle, setAngle] = React.useState("dynamic");
@@ -43,7 +44,7 @@ const Home = (props) => {
       const searchData = fuse.search(query.trim());
       setResults(searchData.map((result) => result.item)); //return only matched icons
     } else {
-      setResults(Object.values(icons)); //return all icons
+      setResults(Object.values(reversedIcons)); //return all icons
     }
   }, [query]);
 
@@ -195,8 +196,13 @@ const Home = (props) => {
           </Select>
         </FilterBox>
       </SearchBox>
-
+      <NewPack>
+        <a href="https://3dicons.co/pack/christmas?fp" target="_blank">
+          <img alt="" src="https://3dicons.co/christmas-pack-figma.png" />
+        </a>
+      </NewPack>
       <Grid>
+
         {results.map((icon, i) => {
           return (
             <IconGrid
@@ -217,14 +223,9 @@ const Home = (props) => {
       <FooterWrapper>
         <FooterCredit>
           <div className="left-icon">
-            <a href="https://3dicons.co" target="_blank">
-              <img
-                src="https://3dicons.co/3dicons.png"
-                height="12px"
-                alt={name}
-              />
+            <a href="https://3dicons.co?fp" target="_blank">
+              3dicons.co
             </a>
-            <span>v1.0</span>
           </div>
           <div className="right-link">
             by{" "}
@@ -244,6 +245,7 @@ const SearchBox = styled.div`
   position: sticky;
   top: 0;
   border-bottom: 1px solid var(--figma-color-border);
+  z-index: 99;
   input {
     width: 100%;
     height: 40px;
@@ -326,6 +328,22 @@ const FooterWrapper = styled.div`
   width: 100%;
 `;
 
+const NewPack = styled.div`
+  position: relative;
+  padding: 8px;
+  a{
+    line-height: 0;
+  }
+  img{
+    width: 100%;
+    border-radius: 8px;
+    transition: all ease-in 300ms; 
+    &:hover{
+      transform: scale(1.01)
+    }
+  }
+`;
+
 const FooterCredit = styled.div`
   display: flex;
   padding: 6px 8px;
@@ -341,11 +359,15 @@ const FooterCredit = styled.div`
   }
   a {
     font-weight: 800;
-    color: var(--figma-color-icon-brand);
+    color: var(--figma-color-icon-disabled);
     text-decoration: none;
     opacity: 0.8;
   }
   .left-icon {
+      color: var(--figma-color-icon-disabled);
+      margin-left: 8px;
+      font-size: var(--font-size-xsmall);
+      font-weight: 600;
     span {
       color: var(--figma-color-icon-disabled);
       margin-left: 8px;

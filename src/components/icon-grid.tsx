@@ -65,7 +65,7 @@ function IconGrid({
   const prefix = `https://3dicons.sgp1.cdn.digitaloceanspaces.com/v1/${angle}/${color}/`; // For added on figma 800px
   const imageKitPrefix = `https://ik.imagekit.io/3dicons/tr:w-100,h-100/v1/${angle}/${color}/`; // For view optimized 100px
   const sufix = `-${angle}-${color}.png?new_icon`;
-
+  const figName = `${name}-${angle}-${color}`;
   const setBg = async () => {
     const image = await loadImage(`${prefix}${name}${sufix}`, imgRef);
 
@@ -77,7 +77,7 @@ function IconGrid({
       {
         pluginMessage: {
           type: "set-bg",
-          icoName: name,
+          icoName: figName,
           data: { newBytes },
         },
       },

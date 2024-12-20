@@ -47,7 +47,7 @@ figma.ui.onmessage = (msg) => {
 
     //@ts-ignore
     node.fills = newFills;
-    node.name = "3dicons";
+    node.name = "3dicons-" + msg.icoName;
 
     figma.currentPage.selection = [node];
 

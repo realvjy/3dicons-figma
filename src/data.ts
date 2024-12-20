@@ -645,6 +645,87 @@ const iconData = {
       name: "zoom",
       keywords: ["magnifier", "search", "binocular"],
     },
+    // Christmas
+    {
+      name: "xmas-tree",
+      keywords: ["christmas", "holiday", "decoration", "festive-tree", "tree", "ornament", "evergreen", "decor"]
+    },
+    {
+      name: "gift-box",
+      keywords: ["christmas", "giftbox", "holiday", "package", "gift-wrap", "surprise"]
+    },
+    {
+      name: "leaf",
+      keywords: ["holly-leaf", "christmas", "decoration", "holiday", "plant"]
+    },
+    {
+      name: "star",
+      keywords: ["christmas", "star", "holiday", "decoration", "ornament"]
+    },
+    {
+      name: "gloves",
+      keywords: ["christmas", "gloves", "winter-wear", "accessory", "winter", "holiday"]
+    },
+    {
+      name: "snowman",
+      keywords: ["christmas", "snowman", "figure", "winter", "decoration", "character", "snow"]
+    },
+    {
+      name: "snowflake",
+      keywords: ["christmas", "snowflake", "winter", "decoration", "festive", "frozen-design", "ornament"]
+    },
+    {
+      name: "candle",
+      keywords: ["candle", "christmas", "festive-light", "decoration", "warm-glow", "holiday-ambiance"]
+    },
+    {
+      name: "ball",
+      keywords: ["christmas", "ball", "decoration", "ornament", "holiday", "tree-decoration"]
+    },
+    {
+      name: "wreath",
+      keywords: ["wreath", "christmas", "holiday", "ornament", "door-decor", "winter", "decoration"]
+    },
+    {
+      name: "candy",
+      keywords: ["candy", "cane", "christmas", "holiday-sweet", "festive-treat", "stripes"]
+    },
+    {
+      name: "shocks",
+      keywords: ["christmas", "stockings", "socks", "gift-holder", "santa", "tradition", "hanging", "winter"]
+    },
+    {
+      name: "ribbon",
+      keywords: ["christmas", "ribbon", "gift", "decoration", "holiday", "festive", "bow"]
+    },
+    {
+      name: "bell",
+      keywords: ["christmas", "bell", "decoration", "jingle-bell", "sound", "ornament", "festive", "charm"]
+    },
+    {
+      name: "gingerbread",
+      keywords: ["gingerbread", "cookie", "christmas", "holiday-treat", "snack", "festive", "baking"]
+    },
+    {
+      name: "reindeer",
+      keywords: ["christmas", "reindeer", "animal", "holiday", "santa", "festive", "rudolph"]
+    },
+    {
+      name: "cap",
+      keywords: ["santa", "hat", "christmas-cap", "costume", "christmas", "holiday", "winter"]
+    },
+    {
+      name: "sleigh",
+      keywords: ["sleigh", "christmas", "ride", "delivery", "holiday", "reindeer", "santa"]
+    },
+    {
+      name: "calendar",
+      keywords: ["christmas", "calendar", "25th-december", "holiday", "date", "festive", "planner"]
+    },
+    {
+      name: "santa",
+      keywords: ["santa", "claus", "christmas", "holiday", "festive", "tradition", "gift", "costume"]
+    }
   ],
   colors: ["color", "clay", "gradient", "premium"],
   angles: ["front", "dynamic", "iso"],
